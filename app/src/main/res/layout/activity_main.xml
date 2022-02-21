@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/image"
-        android:layout_toEndOf="@id/image"
-        android:text="Hello World!"
-        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/image"
@@ -22,12 +14,27 @@
         android:layout_marginTop="100dp"
         android:src="@mipmap/ic_launcher" />
 
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textSize="20sp" />
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_second"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview"
-        android:layout_alignParentEnd="true"
-        android:text="Click me" />
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="Click"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
 
 </RelativeLayout>
